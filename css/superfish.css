@@ -1,0 +1,60 @@
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			inherit;
+	top:			0; /* match top ul list item height */
+	z-index:		99;
+}
+
+/*** adding the class sf-navbar in addition to sf-menu creates an all-horizontal nav-bar menu ***/
+.sf-navbar {
+	height:			2.5em;
+	padding-top:		1.5em;
+	position:		relative;
+}
+.sf-navbar li {
+	position:		static;
+}
+.sf-navbar a {
+	border-top:		none;
+}
+.sf-navbar li ul {
+	width:			100%; /*IE6 soils itself without this*/
+}
+
+.sf-navbar ul li {
+	width:			auto;
+}
+
+ul.sf-navbar .current ul {
+	left:			0;
+	top:			0; /* match top ul list item height */
+}
