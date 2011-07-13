@@ -1,7 +1,7 @@
 var portfolioTimeout;
 var currentProject = 0;
 var currentBg = 0;
-var bgTime = 5000;
+var bgTime = 4000;
 var $pageList;
 var $slider;
 

@@ -6,25 +6,29 @@ var images = {
 		defaultBg: "bgSunrise.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
-				["project3-1.jpg"]]
+				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
 	},
 	day: {
 		defaultBg: "bgDay.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
-				["project3-1.jpg"]]
+				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
 	},
 	sunset: {
 		defaultBg: "bgSunset.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
-				["project3-1.jpg"]]
+				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
 	},
 	night: {
 		defaultBg: "bgNight.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
-				["project3-1.jpg"]]
+				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
 	}
 };
 var bgState = getBgState();
@@ -64,6 +68,7 @@ $(function() {
 	$bg[0].src = $bg2[0].src = "/images/" + bgState.defaultBg;
 
 	$bg.load(function() {
+		//fadeBgTo(bgState.defaultBg);
 		$bg.fadeIn(2000);
 	});
 	

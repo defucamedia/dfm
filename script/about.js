@@ -8,7 +8,7 @@ function handlePages() {
 	var pager = "<span class=\"pager\">";
 
 	for (var i = 0; i < pages; i++)
-		pager += "<a href=\"#\"" + (i == 0 ? "class=\"current\"" : "") + ">" + (i % 2 == 0 ? "&#9660;" : "&#9650;") + "</a>";
+		pager += "<a href=\"#\"" + (i == 0 ? "class=\"current\"" : "") + ">" + (i % 2 == 0 ? "&#9650;" : "&#9660;") + "</a>";
 
 	pager += "</span>";
 	$pageList.closest("div").before(pager);
