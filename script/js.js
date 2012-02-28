@@ -50,12 +50,6 @@ function getBgState() {
 	return images.night;
 }
 
-$.each(bgState.projectBgs, function() {
-	$.each(this, function() {
-		(new Image()).src = "/images/" + this;
-	});
-});
-
 function fadeBgTo(image, delay) {
 	$bg2.show();
 	$bg[0].src = "/images/" + image;
@@ -68,8 +62,13 @@ $(function() {
 	$bg[0].src = $bg2[0].src = "/images/" + bgState.defaultBg;
 
 	$bg.load(function() {
-		//fadeBgTo(bgState.defaultBg);
 		$bg.fadeIn(2000);
+
+		$.each(bgState.projectBgs, function() {
+			$.each(this, function() {
+				(new Image()).src = "/images/" + this;
+			});
+		});
 	});
 	
 	
