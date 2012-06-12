@@ -7,28 +7,32 @@ var images = {
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
 				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
-				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"],
+				["project5-1.jpg", "project5-2.jpg", "project5-3.jpg", "project5-4.jpg"]]
 	},
 	day: {
 		defaultBg: "bgDay.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
 				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
-				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"],
+				["project5-1.jpg", "project5-2.jpg", "project5-3.jpg", "project5-4.jpg"]]
 	},
 	sunset: {
 		defaultBg: "bgSunset.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
 				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
-				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"],
+				["project5-1.jpg", "project5-2.jpg", "project5-3.jpg", "project5-4.jpg"]]
 	},
 	night: {
 		defaultBg: "bgNight.jpg",
 		projectBgs: 	[["project1-1.jpg", "project1-2.jpg", "project1-3.jpg", "project1-4.jpg", "project1-5.jpg"],
 				["project2-1.jpg", "project2-2.jpg", "project2-3.jpg", "project2-4.jpg", "project2-5.jpg"],
 				["project3-1.jpg", "project3-2.jpg", "project3-3.jpg", "project3-4.jpg", "project3-5.jpg"],
-				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"]]
+				["project4-1.jpg", "project4-2.jpg", "project4-3.jpg", "project4-4.jpg", "project4-5.jpg"],
+				["project5-1.jpg", "project5-2.jpg", "project5-3.jpg", "project5-4.jpg"]]
 	}
 };
 var bgState = getBgState();
